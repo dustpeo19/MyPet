@@ -1,40 +1,163 @@
 body {
-    background: url(../../img/mypet-bg-new.png) no-repeat center top /cover;
+    /* font-family: 'NanumSquare', sans-serif; */
+    font-family: 'Nanum Gothic', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+header {
+    background-color: rgb(187,221,255);
+    margin: 0;
+    padding: 40px;
 }
 header h1 {
-    color: white;
+    color: black;
     text-align: center;
-    margin: 100px 0 0;
-    font-size: 50px;
+    font-size: 45px;
+    font-family: 'Gamja Flower', cursive;
+}
+header h2 {
+    color: black;
+    text-align: center;
+    font-size: 30px;
     font-family: 'Gamja Flower', cursive;
 }
 @media(max-width : 900px) {
+    header {padding: 30px;}
     header h1 {font-size : 40px;}
+    header h2 {font-size : 27.5px;}
+    .description {padding-top: 75px;}
 }
 @media(max-width : 600px) {
-    header h1 {font-size : 30px;}
+    header {padding: 20px;}
+    header h1 {font-size : 35px;}
+    header h2 {font-size : 25px;}
+    .description {padding-top: 50px;}
 }
+
+/* index */
+
+/* speech-bubble */
+.bubble-container {
+    width: 320px;
+    margin: 20px auto;
+}
+.speech-bubble-right {
+	position: relative;
+	background: rgb(230,230,230);
+    padding: 10px;
+	border-radius: .4em;
+}
+.speech-bubble-right:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-right-color: rgb(230,230,230);
+	border-left: 0;
+	border-top: 0;
+	margin-top: -5px;
+	margin-left: -10px;
+}
+.speech-bubble-left {
+	position: relative;
+    background: rgb(255,235,51);
+    padding: 10px;
+	border-radius: .4em;
+}
+.speech-bubble-left:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-left-color:rgb(255,235,51);
+	border-right: 0;
+	border-top: 0;
+	margin-top: -5px;
+	margin-right: -10px;
+}
+
+/* under bubble */
+
+.description {
+    margin: 20px auto;
+    width: 320px;
+    text-align: center;
+}
+.description p {
+    font-size: 16px;
+}
+.description ul {
+    padding: 0;
+}
+.description li {
+    list-style: none;
+}
+.btn-container {
+    height: 150px;
+    position: relative;
+    margin: 20px;
+}
+.btn-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.test-start {
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+.main-picture {
+    text-align: center;
+}
+
 /* Style the form */
 #regForm {
     background-color: transparent;
     margin: 50px auto;
-    padding: 40px;
+    padding: 0;
     width: 320px;
     min-width: 300px;
 }
-
-#regForm h3 {
-    color: white;
+.tab {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(33,37,41);
 }
 
 /* Style the input fields */
+.number {
+    font-size: 20px;
+}
+.question {
+    padding: 0 0 15px 0;
+    font-size: 20px;
+}
 label {
-    color: white;
-    display: block;
+    color: black;
     border: 1px solid white;
+    cursor: pointer;
+    font-size: 16px ;
 }
 input {
 
+}
+.endbutton {
+    width: 130px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 0;
 }
 
 /* Mark input boxes that gets an error on validation: */
@@ -44,7 +167,7 @@ background-color: #ffdddd;
 
 /* Hide all steps by default: */
 .tab {
-display: none;
+/* display: none; */
 }
 
 /* Make circles that indicate the steps of the form: */
@@ -78,4 +201,12 @@ background-color: #4CAF50;
     height: 50px;
     border-radius: 25px;
     font-size: 18px;
+}
+
+/* footer */
+footer {
+    margin: 30px 0;
+}
+footer address {
+    font-size: 14px;
 }
