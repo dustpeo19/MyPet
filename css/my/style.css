@@ -169,6 +169,13 @@ background-color: #ffdddd;
 .tab {
 /* display: none; */
 }
+.p-active {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(111, 167, 223);
+    border-radius: 10px;
+    padding: 10px;
+}
 
 /* Make circles that indicate the steps of the form: */
 .step {
@@ -208,5 +215,5 @@ footer {
     margin: 30px 0;
 }
 footer address {
-    font-size: 14px;
+    font-size: 13px;
 }
