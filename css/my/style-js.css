@@ -6,7 +6,7 @@ body {
 header {
     background-color: rgb(187,221,255);
     margin: 0;
-    padding: 40px;
+    padding: 20px;
 }
 header h1 {
     color: black;
@@ -21,7 +21,7 @@ header h2 {
     font-family: 'Gamja Flower', cursive;
 }
 @media(max-width : 600px) {
-    header {padding: 20px;}
+    header {padding: 10px;}
     header h1 {font-size : 35px;}
     header h2 {font-size : 25px;}
 }
@@ -81,7 +81,7 @@ header h2 {
     width: 600px;
     text-align: center;
 }
-@media(max-width : 600px) {
+@media(max-width : 900px) {
     .description {width: 320px;}
 }
 .description p {
@@ -139,7 +139,7 @@ div[class^="tab"] {
     font-size: 18px;
     line-height: 30px;
 }
-.formwrapper p{
+div[class^="tab"] p{
     padding: 10px;
     margin-bottom: 5px;
     border: 2px solid rgb(163,167,171);
@@ -218,15 +218,15 @@ div[id^="desc"] {
 /* ads */
 .ad-left {
     position: absolute;
-    top: 195px;
+    top: 155px;
     left: 10px;
 }
 .ad-right {
     position: absolute;
-    top: 195px;
+    top: 155px;
     right: 10px;
 }
-@media(max-width : 900px) {
+@media(max-width : 700px) {
     .ad-left {display: none;}
     .ad-right {display: none;}
 }

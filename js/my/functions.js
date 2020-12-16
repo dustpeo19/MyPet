@@ -72,9 +72,25 @@ function makeResult(mbti) {
         }
     }
 
+    for(let i=0;i<cats.length;i++) {
+        if(cats[i].match1==mbti || cats[i].match2==mbti) {
+            if(typeof(resultName[2]) == 'undefined') {
+                resultName[2]=cats[i].name;
+                resultImg[2]=cats[i].img;
+                resultDescription[2]=cats[i].description;
+            } else {
+                resultName[3]=cats[i].name;
+                resultImg[3]=cats[i].img;
+                resultDescription[3]=cats[i].description;
+            }
+        }
+    }
+
     //html에 삽입
     var md = document.getElementById('matched-dog');
     md.insertAdjacentHTML('beforeend', resultName[0]+', '+resultName[1]);
+    var mc = document.getElementById('matched-cat');
+    mc.insertAdjacentHTML('beforeend', resultName[2]+', '+resultName[3]);
 
     var name1 = document.getElementById('name-1');
     name1.insertAdjacentHTML('afterbegin', resultName[0]);
@@ -89,4 +105,18 @@ function makeResult(mbti) {
     img2.insertAdjacentHTML('afterbegin', '<img src="img/profile/dog/'+resultName[1]+'.jpg" alt="'+resultName[1]+'" width="200px">');
     var desc2 = document.getElementById('desc-2');
     desc2.insertAdjacentHTML('afterbegin', resultDescription[1]);
+    
+    var name3 = document.getElementById('name-3');
+    name3.insertAdjacentHTML('afterbegin', resultName[2]);
+    var img3 = document.getElementById('img-3');
+    img3.insertAdjacentHTML('afterbegin', '<img src="img/profile/cat/'+resultName[2]+'.jpg" alt="'+resultName[2]+'" width="200px">');
+    var desc3 = document.getElementById('desc-3');
+    desc3.insertAdjacentHTML('afterbegin', resultDescription[2]);
+    
+    var name4 = document.getElementById('name-4');
+    name4.insertAdjacentHTML('afterbegin', resultName[3]);
+    var img4 = document.getElementById('img-4');
+    img4.insertAdjacentHTML('afterbegin', '<img src="img/profile/cat/'+resultName[3]+'.jpg" alt="'+resultName[3]+'" width="200px">');
+    var desc4 = document.getElementById('desc-4');
+    desc4.insertAdjacentHTML('afterbegin', resultDescription[3]);
 }
