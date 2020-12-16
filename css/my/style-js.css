@@ -216,6 +216,20 @@ div[id^="desc"] {
 }
 
 /* ads */
+.ad-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.ad-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+@media(max-width : 900px) {
+    .ad-left {display: none;}
+    .ad-right {display: none;}
+}
 .ad-bottom {
     width: 320px;
     margin: 20px auto;
