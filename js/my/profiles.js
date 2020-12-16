@@ -84,7 +84,7 @@ dogs[11] = {
     match2: 'entp'
 };
 dogs[12] = {
-    name: '골든리트리버',
+    name: '골든 리트리버',
     img: '',
     description: '충성스럽고 믿음 가는 골든 리트리버는 리더십과 추진력을 가진 당신의 든든한 동반자이다.',
     match1: 'estj',

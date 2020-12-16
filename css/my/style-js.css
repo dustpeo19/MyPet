@@ -218,12 +218,12 @@ div[id^="desc"] {
 /* ads */
 .ad-left {
     position: absolute;
-    top: 10px;
+    top: 195px;
     left: 10px;
 }
 .ad-right {
     position: absolute;
-    top: 10px;
+    top: 195px;
     right: 10px;
 }
 @media(max-width : 900px) {
