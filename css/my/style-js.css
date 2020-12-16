@@ -214,6 +214,13 @@ div[id^="desc"] {
     div[id^=name] {font-size: 16px;}
     div[id^="desc"] {font-size: 14px;}
 }
+
+/* ads */
+.ad-bottom {
+    width: 320px;
+    margin: 20px auto;
+}
+
 /* footer */
 footer {
     margin: 30px 0;
