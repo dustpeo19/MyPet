@@ -320,5 +320,7 @@ footer address {
     font-size: 13px;
 }
 @media(max-width : 600px) {
+    footer {width: 320px;}
+    footer img {width: 30px;}
     footer address {font-size: 12px;}
 }
