@@ -192,7 +192,7 @@ var result = '';
 
 submitBtn.onclick = function() {
   if(answerSet.every(isAnswered)) {
-      $('html,body').scrollTop(0);
+      $(window).scrollTop(0);
       document.querySelector('.formdescription').style.display="none";
       document.querySelector('.formwrapper').style.display="none";
       document.querySelector('.result').style.display="block";

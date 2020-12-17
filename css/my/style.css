@@ -6,7 +6,7 @@ body {
 header {
     background-color: rgb(187,221,255);
     margin: 0;
-    padding: 40px;
+    padding: 20px;
 }
 header h1 {
     color: black;
@@ -20,17 +20,10 @@ header h2 {
     font-size: 30px;
     font-family: 'Gamja Flower', cursive;
 }
-@media(max-width : 900px) {
-    header {padding: 30px;}
-    header h1 {font-size : 40px;}
-    header h2 {font-size : 27.5px;}
-    .description h4 {font-size: 20px;}
-}
 @media(max-width : 600px) {
-    header {padding: 20px;}
+    header {padding: 10px;}
     header h1 {font-size : 35px;}
     header h2 {font-size : 25px;}
-    .description h4 {font-size: 18px;}
 }
 
 /* index */
@@ -85,11 +78,15 @@ header h2 {
 
 .description {
     margin: 20px auto;
-    width: 320px;
+    width: 600px;
     text-align: center;
 }
+@media(max-width : 900px) {
+    .description {width: 320px;}
+}
 .description p {
-    font-size: 16px;
+    font-size: 15px;
+    text-align: justify;
 }
 .description ul {
     padding: 0;
@@ -122,35 +119,48 @@ header h2 {
 }
 
 /* Style the form */
-#regForm {
-    background-color: transparent;
-    margin: 50px auto;
-    padding: 0;
+.formdescription {
     width: 320px;
-    min-width: 300px;
+    margin: 20px auto;
+    font-size: 15px;
+    text-align: justify;
 }
-.tab {
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    border-bottom: 2px solid rgb(33,37,41);
+div[class^="tab"] {
+    padding-top: 30px;
+    border-top: 1px solid rgb(33,37,41);
+    width: 320px;
+    margin: 40px auto;
 }
-
-/* Style the input fields */
 .number {
     font-size: 20px;
 }
 .question {
-    padding: 0 0 15px 0;
-    font-size: 20px;
+    padding: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 30px;
 }
-label {
-    color: black;
-    border: 1px solid white;
+div[class^="tab"] p{
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid rgb(163,167,171);
     cursor: pointer;
-    font-size: 16px ;
+    text-align: center;
+    font-size: 15px;
 }
-input {
-
+.p-active {
+    color: rgb(33,37,41);
+    background-color: rgb(187,221,255);
+    padding: 10px;
+}
+@media(max-width : 600px) {
+    div[class^="tab"] {width: 320px;}
+    .number {font-size: 16px;}
+    .question {font-size : 16px;}
+    .formwrapper p {font-size : 14px;}
+}
+.button-wrap {
+    width: 320px;
+    margin: 0 auto;
 }
 .endbutton {
     width: 130px;
@@ -160,55 +170,69 @@ input {
     padding: 0;
 }
 
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-background-color: #ffdddd;
+/* result */
+.result {
+    display: none;
+    margin: 40px auto;
+    width: 500px;
 }
-
-/* Hide all steps by default: */
-/* .tab {
-display: none;
-} */
-
-.p-active {
+.result h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p[id^=matched] {
+    text-align: center;
+}
+.result h4 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.detailwrap  {
+    margin-bottom: 10px;
+    border: 1px solid rgb(33,37,41);
+    padding: 10px;
+}
+div[id^=name] {
+    text-align: center;
+    font-size: 18px;
     font-weight: bold;
-    color: white;
-    background-color: rgb(111, 167, 223);
-    border-radius: 10px;
+    margin-bottom: 10px;
+}
+div[id^="img"] {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div[id^="desc"] {
+    text-align: justify;
+    font-size: 16px;
     padding: 10px;
 }
 
-/* Make circles that indicate the steps of the form: */
-.step {
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbbbbb;
-border: none;
-border-radius: 50%;
-display: inline-block;
-opacity: 0.5;
+@media(max-width : 600px) {
+    .result {width: 320px;}
+    div[id^=name] {font-size: 16px;}
+    div[id^="desc"] {font-size: 14px;}
 }
 
-/* Mark the active step: */
-.step.active {
-opacity: 1;
+/* ads */
+.ad-left {
+    position: absolute;
+    top: 155px;
+    left: 10px;
 }
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-background-color: #4CAF50;
+.ad-right {
+    position: absolute;
+    top: 155px;
+    right: 10px;
 }
-
-#prevBtn {
-    height: 50px;
-    border-radius: 25px;
-    font-size: 18px;
+@media(max-width : 700px) {
+    .ad-left {display: none;}
+    .ad-right {display: none;}
 }
-#nextBtn {
-    height: 50px;
-    border-radius: 25px;
-    font-size: 18px;
+.ad-bottom {
+    width: 320px;
+    margin: 20px auto;
 }
 
 /* footer */
