@@ -309,18 +309,14 @@ div[id^="desc"] {
 
 /* footer */
 footer {
-    width: 500px;
-    margin: 30px auto;
+    width: 320px;
+    margin: 40px auto;
     padding: 0;
 }
 footer img {
     width: 40px;
 }
 footer address {
-    font-size: 13px;
-}
-@media(max-width : 600px) {
-    footer {width: 320px;}
-    footer img {width: 30px;}
-    footer address {font-size: 11px;}
+    font-size: 12px;
+    margin: 0;
 }
