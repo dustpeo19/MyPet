@@ -213,6 +213,11 @@ div[class^="tab"] p {
 .loading div {
     margin-bottom: 30px;
 }
+@media(max-width : 600px) {
+    .loading h2 {
+        font-size: 25px;
+    }
+}
 
 /* result */
 .result {
