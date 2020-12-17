@@ -322,5 +322,5 @@ footer address {
 @media(max-width : 600px) {
     footer {width: 320px;}
     footer img {width: 30px;}
-    footer address {font-size: 10px;}
+    footer address {font-size: 11px;}
 }
