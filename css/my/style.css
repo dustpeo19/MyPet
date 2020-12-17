@@ -79,10 +79,18 @@ header h2 {
 .description {
     margin: 20px auto;
     width: 600px;
+    padding-bottom: 16px;
     text-align: center;
+    background-color: rgb(230,230,230);
+    border-radius: 10px;
 }
-@media(max-width : 900px) {
-    .description {width: 320px;}
+@media(max-width : 1000px) {
+    .description {width: 320px;padding: 16px;}
+}
+.description h4 {
+    font-weight: bold;
+    padding: 16px;
+    margin: 0;
 }
 .description p {
     font-size: 15px;
@@ -117,32 +125,55 @@ header h2 {
 .main-picture {
     text-align: center;
 }
+.notice {
+    width: 600px;
+    margin: 20px auto;
+    background-color: rgb(230,230,230);
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+}
+@media(max-width : 1000px) {
+    .notice {width: 320px;padding: 16px;}
+}
+.notice p {
+    margin: 0;
+    padding: 0;
+}
 
 /* Style the form */
-.formdescription {
+.formnotice {
     width: 320px;
     margin: 20px auto;
-    font-size: 15px;
-    text-align: justify;
+    font-size: 17px;
+    text-align: center;
+}
+.formnotice p {
+    background-color: rgb(255, 118, 27);
+    color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px;
 }
 div[class^="tab"] {
-    padding-top: 30px;
-    border-top: 1px solid rgb(33,37,41);
     width: 320px;
     margin: 40px auto;
 }
 .number {
     font-size: 20px;
+    font-weight: bold;
 }
 .question {
     padding: 0 0 10px 0;
     font-size: 18px;
     line-height: 30px;
+    font-weight: bold;
 }
-div[class^="tab"] p{
+div[class^="tab"] p {
     padding: 10px;
     margin-bottom: 5px;
     border: 2px solid rgb(163,167,171);
+    border-radius: 10px;
     cursor: pointer;
     text-align: center;
     font-size: 15px;
@@ -154,9 +185,9 @@ div[class^="tab"] p{
 }
 @media(max-width : 600px) {
     div[class^="tab"] {width: 320px;}
-    .number {font-size: 16px;}
-    .question {font-size : 16px;}
-    .formwrapper p {font-size : 14px;}
+    .number {font-size: 17px;}
+    .question {font-size : 17px;}
+    .div[class^="tab"] p {font-size: 14px;}
 }
 .button-wrap {
     width: 320px;
@@ -168,6 +199,19 @@ div[class^="tab"] p{
     border-radius: 25px;
     font-size: 16px;
     padding: 0;
+}
+
+/* loading */
+.loading {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+.loading div {
+    margin-bottom: 30px;
 }
 
 /* result */
@@ -183,21 +227,25 @@ div[class^="tab"] p{
 p[id^=matched] {
     text-align: center;
 }
+#matched-dog {
+    margin-bottom: 10px;
+}
 .result h4 {
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
 }
-.detailwrap  {
-    margin-bottom: 10px;
-    border: 1px solid rgb(33,37,41);
+.detailwrap {
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px;
     padding: 10px;
+    border-radius: 5px;
 }
 div[id^=name] {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin: 15px;
 }
 div[id^="img"] {
     text-align: center;
@@ -206,11 +254,30 @@ div[id^="img"] {
 div[id^="desc"] {
     text-align: justify;
     font-size: 16px;
-    padding: 10px;
+    padding: 10px 10px 20px;
 }
-
-@media(max-width : 600px) {
+.properties {
+    padding: 20px 0;
+    margin: 0 10px;
+    border-top: 2px solid rgb(163,167,171);
+}
+.axis {
+    width: 50px;
+}
+.axis ul {
+    margin: 0;
+    padding: 0;
+}
+.axisname {
+    list-style: none;
+    font-size: 14px;
+    margin-bottom: 1.5px;
+}
+@media(max-width : 900px) {
     .result {width: 320px;}
+}
+@media(max-width : 600px) {
+    p[id^=matched] {font-size: 14px;}
     div[id^=name] {font-size: 16px;}
     div[id^="desc"] {font-size: 14px;}
 }
@@ -239,6 +306,12 @@ div[id^="desc"] {
 footer {
     margin: 30px 0;
 }
+footer img {
+    width: 40px;
+}
 footer address {
     font-size: 13px;
+}
+@media(max-width : 600px) {
+    footer address {font-size: 12px;}
 }

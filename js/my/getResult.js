@@ -188,15 +188,24 @@ function isAnswered(element) {
 }
 
 var submitBtn = document.getElementById('submitbtn');
-var result = '';
+
+function getResultAfterTimeout() {
+  document.querySelector('.loading').style.display="none";
+  document.querySelector('.ad-bottom').style.display="block";
+  document.querySelector('footer').style.display="block";
+  document.querySelector('.result').style.display="block";
+  makeResult(getMBTI(answerSet));
+}
 
 submitBtn.onclick = function() {
   if(answerSet.every(isAnswered)) {
       $(window).scrollTop(0);
-      document.querySelector('.formdescription').style.display="none";
+      document.querySelector('.formnotice').style.display="none";
       document.querySelector('.formwrapper').style.display="none";
-      document.querySelector('.result').style.display="block";
-      makeResult(getMBTI(answerSet));
+      document.querySelector('.ad-bottom').style.display="none";
+      document.querySelector('footer').style.display="none";
+      document.querySelector('.loading').style.display="block";
+      setTimeout(getResultAfterTimeout,2000);
   }else{
       alert('모든 문항에 답변해주세요!');
   }
