@@ -296,6 +296,10 @@ div[id^="desc"] {
     top: 155px;
     right: 10px;
 }
+.ad-top {
+    width: 320px;
+    margin: 20px auto;
+}
 @media(max-width : 700px) {
     .ad-left {display: none;}
     .ad-right {display: none;}
