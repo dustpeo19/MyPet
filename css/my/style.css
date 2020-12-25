@@ -283,6 +283,8 @@ div[id^="desc"] {
     div[id^=name] {font-size: 16px;}
     div[id^="desc"] {font-size: 14px;}
 }
+
+/* share */
 .sharebtn {
     text-align: center;
     margin: 15px 0 30px;
@@ -290,6 +292,9 @@ div[id^="desc"] {
 .sharebtn img {
     border-radius: 25px;
     box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+#kakao-link-btn {
+    margin-right: 20px;
 }
 
 /* ads */
