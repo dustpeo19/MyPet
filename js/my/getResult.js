@@ -187,15 +187,34 @@ function isAnswered(element) {
   return element > 0;
 }
 
-var submitBtn = document.getElementById('submitbtn');
-
 function getResultAfterTimeout() {
-  document.querySelector('.loading').style.display="none";
-  document.querySelector('.ad-bottom').style.display="block";
-  document.querySelector('footer').style.display="block";
-  document.querySelector('.result').style.display="block";
-  makeResult(getMBTI(answerSet));
+  if(getMBTI(answerSet)=='istj' || getMBTI(answerSet)=='isfj') {
+    location.href='resultid=1';
+  }
+  if(getMBTI(answerSet)=='infj' || getMBTI(answerSet)=='intj') {
+    location.href='resultid=2';
+  }
+  if(getMBTI(answerSet)=='istp' || getMBTI(answerSet)=='isfp') {
+    location.href='resultid=3';
+  }
+  if(getMBTI(answerSet)=='infp' || getMBTI(answerSet)=='intp') {
+    location.href='resultid=4';
+  }
+  if(getMBTI(answerSet)=='estp' || getMBTI(answerSet)=='esfp') {
+    location.href='resultid=5';
+  }
+  if(getMBTI(answerSet)=='enfp' || getMBTI(answerSet)=='entp') {
+    location.href='resultid=6';
+  }
+  if(getMBTI(answerSet)=='estj' || getMBTI(answerSet)=='esfj') {
+    location.href='resultid=7';
+  }
+  if(getMBTI(answerSet)=='enfj' || getMBTI(answerSet)=='entj') {
+    location.href='resultid=8';
+  }
 }
+
+var submitBtn = document.getElementById('submitbtn');
 
 submitBtn.onclick = function() {
   if(answerSet.every(isAnswered)) {
@@ -205,7 +224,7 @@ submitBtn.onclick = function() {
       document.querySelector('.ad-bottom').style.display="none";
       document.querySelector('footer').style.display="none";
       document.querySelector('.loading').style.display="block";
-      setTimeout(getResultAfterTimeout,2000);
+      setTimeout(getResultAfterTimeout,1500);
   }else{
       alert('모든 문항에 답변해주세요!');
   }

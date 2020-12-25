@@ -221,7 +221,6 @@ div[class^="tab"] p {
 
 /* result */
 .result {
-    display: none;
     margin: 40px auto;
     width: 500px;
 }
@@ -330,7 +329,7 @@ footer address {
     margin: 0;
 }
 
-/* result.html */
+/* 결과 모아보기 */
 .resultcollection {
     margin: 20px auto;
     width: 500px;
