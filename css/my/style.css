@@ -283,6 +283,10 @@ div[id^="desc"] {
     div[id^=name] {font-size: 16px;}
     div[id^="desc"] {font-size: 14px;}
 }
+.sharebtn {
+    text-align: center;
+    margin: 15px 0 30px;
+}
 
 /* ads */
 .ad-left {
