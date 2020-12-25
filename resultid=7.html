@@ -26,6 +26,9 @@
 	<meta name="robots" content="all"/>
     <title>테스트 결과 : 나와 찰떡궁합인 댕댕이는?</title>
 
+    <!-- kakao message -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
     <!-- fonts -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -197,6 +200,13 @@
                 <script src="js/my/profiles.js"></script>
                 <script src="js/my/functions.js"></script>
                 <script src="js/my/resultShow.js"></script>
+                <script type='text/javascript'>
+                    Kakao.init('dbaf392ff0dd80d8f8fb8a83199a1f32');
+                    Kakao.Link.createCustomButton({
+                    container: '#kakao-link-btn',
+                    templateId: 43441,
+                    });
+                </script>
 
                 <div class="ad-bottom">
                     <ins class="kakao_ad_area" style="display:none;" 
