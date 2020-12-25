@@ -208,10 +208,12 @@
                     Kakao.Link.createCustomButton({
                     container: '#kakao-link-btn',
                     templateId: 43431,
-                    // templateArgs: {
-                    //     'title': '제목 영역입니다.',
-                    //     'description': '설명 영역입니다.'
-                    // }
+                    templateArgs: {
+                        'link': {
+                        webUrl: 'https://jibsa-test.netlify.app/resultid=1',
+                        mobileWebUrl: 'https://jibsa-test.netlify.app/resultid=1',
+                        },
+                    }
                     });
                 </script>
 
