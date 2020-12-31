@@ -377,9 +377,18 @@ footer address {
 }
 .resultname {
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
-    margin: 15px;
+    margin-top: 15px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.resultename {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    color: rgb(150,150,150);
     font-family: 'Nanum Myeongjo', serif;
 }
 .resultimg {
@@ -397,5 +406,6 @@ footer address {
     .resultcollection table td{font-size: 13px;}
     .resultcollection {width: 320px;}
     .resultname {font-size: 18px;}
+    .resultename {font-size: 15px;}
     .resultdesc {font-size: 15px;}
 }
