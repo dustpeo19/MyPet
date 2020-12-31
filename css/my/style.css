@@ -254,9 +254,10 @@ p[id^=matched] {
 }
 div[id^=name] {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin: 15px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 div[id^="img"] {
     text-align: center;
@@ -264,8 +265,9 @@ div[id^="img"] {
 }
 div[id^="desc"] {
     text-align: justify;
-    font-size: 16px;
+    font-size: 17px;
     padding: 10px 10px 20px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .properties {
     padding: 20px 0;
@@ -286,9 +288,9 @@ div[id^="desc"] {
 }
 @media(max-width : 900px) {
     .result {width: 320px;}
-    p[id^=matched] {font-size: 14px;}
-    div[id^=name] {font-size: 16px;}
-    div[id^="desc"] {font-size: 14px;}
+    p[id^=matched] {font-size: 15px;}
+    div[id^=name] {font-size: 18px;}
+    div[id^="desc"] {font-size: 15px;}
 }
 
 /* share */
@@ -375,9 +377,10 @@ footer address {
 }
 .resultname {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin: 15px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 .resultimg {
     text-align: center;
@@ -385,13 +388,14 @@ footer address {
 }
 .resultdesc {
     text-align: justify;
-    font-size: 16px;
+    font-size: 17px;
     padding: 10px 10px 20px;
+    font-family: 'Nanum Myeongjo', serif;
 }
 @media(max-width : 900px) {
     .noticetable {font-size: 15px;}
     .resultcollection table td{font-size: 13px;}
     .resultcollection {width: 320px;}
-    .resultname {font-size: 16px;}
-    .resultdesc {font-size: 14px;}
+    .resultname {font-size: 18px;}
+    .resultdesc {font-size: 15px;}
 }
