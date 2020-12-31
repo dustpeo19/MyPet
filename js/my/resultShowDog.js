@@ -58,35 +58,10 @@ for(let i=0;i<dogs.length;i++) {
         }
     }
 }
-for(let i=0;i<cats.length;i++) {
-    if(cats[i].match1==fixedmbti || cats[i].match2==fixedmbti) {
-        if(typeof(resultName[2]) == 'undefined') {
-            resultName[2]=cats[i].name;
-            resultEName[2]=cats[i].ename;
-            resultDescription[2]=cats[i].description;
-            resultActivity[2]=cats[i].activity*20;
-            resultAttract[2]=cats[i].attract*20;
-            resultIntimacy[2]=cats[i].intimacy*20;
-            resultLoyalty[2]=cats[i].loyalty*20;
-            resultSmart[2]=cats[i].smart*20;
-        } else {
-            resultName[3]=cats[i].name;
-            resultEName[3]=cats[i].ename;
-            resultDescription[3]=cats[i].description;
-            resultActivity[3]=cats[i].activity*20;
-            resultAttract[3]=cats[i].attract*20;
-            resultIntimacy[3]=cats[i].intimacy*20;
-            resultLoyalty[3]=cats[i].loyalty*20;
-            resultSmart[3]=cats[i].smart*20;
-        }
-    }
-}
 
 //html에 삽입
 var md = document.getElementById('matched-dog');
 md.insertAdjacentHTML('beforeend', resultName[0]+', '+resultName[1]);
-var mc = document.getElementById('matched-cat');
-mc.insertAdjacentHTML('beforeend', resultName[2]+', '+resultName[3]);
 
 var name1 = document.getElementById('name-1');
 name1.insertAdjacentHTML('afterbegin', resultName[0]);
@@ -127,43 +102,3 @@ var loyalty2 = document.getElementById('loyalty-2');
 loyalty2.insertAdjacentHTML('afterbegin', getGraphHTML(resultLoyalty[1]));
 var smart2 = document.getElementById('smart-2');
 smart2.insertAdjacentHTML('afterbegin', getGraphHTML(resultSmart[1]));
-
-var name3 = document.getElementById('name-3');
-name3.insertAdjacentHTML('afterbegin', resultName[2]);
-var ename3 = document.getElementById('ename-3');
-ename3.insertAdjacentHTML('afterbegin', resultEName[2]);
-var img3 = document.getElementById('img-3');
-img3.insertAdjacentHTML('afterbegin', '<img src="img/profile/cat/'+resultName[2]+'.jpg" alt="'+resultName[2]+'" width="200px">');
-var desc3 = document.getElementById('desc-3');
-desc3.insertAdjacentHTML('afterbegin', resultDescription[2]);
-
-var activity3 = document.getElementById('activity-3');
-activity3.insertAdjacentHTML('afterbegin', getGraphHTML(resultActivity[2]));
-var attract3 = document.getElementById('attract-3');
-attract3.insertAdjacentHTML('afterbegin', getGraphHTML(resultAttract[2]));
-var intimacy3 = document.getElementById('intimacy-3');
-intimacy3.insertAdjacentHTML('afterbegin', getGraphHTML(resultIntimacy[2]));
-var loyalty3 = document.getElementById('loyalty-3');
-loyalty3.insertAdjacentHTML('afterbegin', getGraphHTML(resultLoyalty[2]));
-var smart3 = document.getElementById('smart-3');
-smart3.insertAdjacentHTML('afterbegin', getGraphHTML(resultSmart[2]));
-
-var name4 = document.getElementById('name-4');
-name4.insertAdjacentHTML('afterbegin', resultName[3]);
-var ename4 = document.getElementById('ename-4');
-ename4.insertAdjacentHTML('afterbegin', resultEName[3]);
-var img4 = document.getElementById('img-4');
-img4.insertAdjacentHTML('afterbegin', '<img src="img/profile/cat/'+resultName[3]+'.jpg" alt="'+resultName[3]+'" width="200px">');
-var desc4 = document.getElementById('desc-4');
-desc4.insertAdjacentHTML('afterbegin', resultDescription[3]);
-
-var activity4 = document.getElementById('activity-4');
-activity4.insertAdjacentHTML('afterbegin', getGraphHTML(resultActivity[3]));
-var attract4 = document.getElementById('attract-4');
-attract4.insertAdjacentHTML('afterbegin', getGraphHTML(resultAttract[3]));
-var intimacy4 = document.getElementById('intimacy-4');
-intimacy4.insertAdjacentHTML('afterbegin', getGraphHTML(resultIntimacy[3]));
-var loyalty4 = document.getElementById('loyalty-4');
-loyalty4.insertAdjacentHTML('afterbegin', getGraphHTML(resultLoyalty[3]));
-var smart4 = document.getElementById('smart-4');
-smart4.insertAdjacentHTML('afterbegin', getGraphHTML(resultSmart[3]));

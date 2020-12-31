@@ -1,5 +1,10 @@
+@font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
-    /* font-family: 'NanumSquare', sans-serif; */
     font-family: 'Nanum Gothic', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -237,6 +242,7 @@ div[class^="tab"] p {
 }
 p[id^=matched] {
     text-align: center;
+    font-size: 18px;
 }
 #matched-dog {
     margin-bottom: 10px;
@@ -257,7 +263,7 @@ div[id^=name] {
     font-size: 22px;
     font-weight: bold;
     margin-top: 15px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'MapoGoldenPier', serif;
 }
 div[id^=ename] {
     text-align: center;
@@ -266,7 +272,7 @@ div[id^=ename] {
     margin-bottom: 15px;
     margin-top: -5px;
     color: rgb(150,150,150);
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'MapoGoldenPier', serif;
 }
 div[id^="img"] {
     text-align: center;
@@ -276,7 +282,7 @@ div[id^="desc"] {
     text-align: justify;
     font-size: 17px;
     padding: 10px 10px 20px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'MapoGoldenPier', serif;
 }
 .properties {
     padding: 20px 0;
@@ -390,7 +396,7 @@ footer address {
     font-size: 25px;
     font-weight: bold;
     margin-top: 15px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'MapoGoldenPier', serif;
 }
 .resultename {
     text-align: center;
@@ -399,7 +405,7 @@ footer address {
     margin-bottom: 15px;
     margin-top: -5px;
     color: rgb(150,150,150);
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'MapoGoldenPier', serif;
 }
 .resultimg {
     text-align: center;
@@ -409,7 +415,7 @@ footer address {
     text-align: justify;
     font-size: 17px;
     padding: 10px 10px 20px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'MapoGoldenPier', serif;
 }
 @media(max-width : 900px) {
     .noticetable {font-size: 15px;}

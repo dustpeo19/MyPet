@@ -189,28 +189,60 @@ function isAnswered(element) {
 
 function getResultAfterTimeout() {
   if(getMBTI(answerSet)=='istj' || getMBTI(answerSet)=='isfj') {
-    location.href='resultid=1';
+    if(target=='dog') {
+      location.href='resultid=1';
+    } else {
+      location.href='resultid=9';
+    }
   }
   if(getMBTI(answerSet)=='infj' || getMBTI(answerSet)=='intj') {
-    location.href='resultid=2';
+    if(target=='dog') {
+      location.href='resultid=2';
+    } else {
+      location.href='resultid=10';
+    }
   }
   if(getMBTI(answerSet)=='istp' || getMBTI(answerSet)=='isfp') {
-    location.href='resultid=3';
+    if(target=='dog') {
+      location.href='resultid=3';
+    } else {
+      location.href='resultid=11';
+    }
   }
   if(getMBTI(answerSet)=='infp' || getMBTI(answerSet)=='intp') {
-    location.href='resultid=4';
+    if(target=='dog') {
+      location.href='resultid=4';
+    } else {
+      location.href='resultid=12';
+    }
   }
   if(getMBTI(answerSet)=='estp' || getMBTI(answerSet)=='esfp') {
-    location.href='resultid=5';
+    if(target=='dog') {
+      location.href='resultid=5';
+    } else {
+      location.href='resultid=13';
+    }
   }
   if(getMBTI(answerSet)=='enfp' || getMBTI(answerSet)=='entp') {
-    location.href='resultid=6';
+    if(target=='dog') {
+      location.href='resultid=6';
+    } else {
+      location.href='resultid=14';
+    }
   }
   if(getMBTI(answerSet)=='estj' || getMBTI(answerSet)=='esfj') {
-    location.href='resultid=7';
+    if(target=='dog') {
+      location.href='resultid=7';
+    } else {
+      location.href='resultid=15';
+    }
   }
   if(getMBTI(answerSet)=='enfj' || getMBTI(answerSet)=='entj') {
-    location.href='resultid=8';
+    if(target=='dog') {
+      location.href='resultid=8';
+    } else {
+      location.href='resultid=16';
+    }
   }
 }
 
