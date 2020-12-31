@@ -256,7 +256,16 @@ div[id^=name] {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    margin: 15px;
+    margin-top: 15px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+div[id^=ename] {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: -5px;
+    color: rgb(150,150,150);
     font-family: 'Nanum Myeongjo', serif;
 }
 div[id^="img"] {

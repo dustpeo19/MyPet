@@ -26,6 +26,7 @@ if(rid==8) {
 }
 
 var resultName=[];
+var resultEName=[];
 var resultDescription=[];
 var resultActivity=[];
 var resultAttract=[];
@@ -38,6 +39,7 @@ for(let i=0;i<dogs.length;i++) {
     if(dogs[i].match1==fixedmbti || dogs[i].match2==fixedmbti) {
         if(typeof(resultName[0]) == 'undefined') {
             resultName[0]=dogs[i].name;
+            resultEName[0]=dogs[i].ename;
             resultDescription[0]=dogs[i].description;
             resultActivity[0]=dogs[i].activity*20;
             resultAttract[0]=dogs[i].attract*20;
@@ -46,6 +48,7 @@ for(let i=0;i<dogs.length;i++) {
             resultSmart[0]=dogs[i].smart*20;
         } else {
             resultName[1]=dogs[i].name;
+            resultEName[1]=dogs[i].ename;
             resultDescription[1]=dogs[i].description;
             resultActivity[1]=dogs[i].activity*20;
             resultAttract[1]=dogs[i].attract*20;
@@ -59,6 +62,7 @@ for(let i=0;i<cats.length;i++) {
     if(cats[i].match1==fixedmbti || cats[i].match2==fixedmbti) {
         if(typeof(resultName[2]) == 'undefined') {
             resultName[2]=cats[i].name;
+            resultEName[2]=cats[i].ename;
             resultDescription[2]=cats[i].description;
             resultActivity[2]=cats[i].activity*20;
             resultAttract[2]=cats[i].attract*20;
@@ -67,6 +71,7 @@ for(let i=0;i<cats.length;i++) {
             resultSmart[2]=cats[i].smart*20;
         } else {
             resultName[3]=cats[i].name;
+            resultEName[3]=cats[i].ename;
             resultDescription[3]=cats[i].description;
             resultActivity[3]=cats[i].activity*20;
             resultAttract[3]=cats[i].attract*20;
@@ -85,6 +90,8 @@ mc.insertAdjacentHTML('beforeend', resultName[2]+', '+resultName[3]);
 
 var name1 = document.getElementById('name-1');
 name1.insertAdjacentHTML('afterbegin', resultName[0]);
+var ename1 = document.getElementById('ename-1');
+ename1.insertAdjacentHTML('afterbegin', resultEName[0]);
 var img1 = document.getElementById('img-1');
 img1.insertAdjacentHTML('afterbegin', '<img src="img/profile/dog/'+resultName[0]+'.jpg" alt="'+resultName[0]+'" width="200px">');
 var desc1 = document.getElementById('desc-1');
@@ -103,6 +110,8 @@ smart1.insertAdjacentHTML('afterbegin', getGraphHTML(resultSmart[0]));
 
 var name2 = document.getElementById('name-2');
 name2.insertAdjacentHTML('afterbegin', resultName[1]);
+var ename2 = document.getElementById('ename-2');
+ename2.insertAdjacentHTML('afterbegin', resultEName[1]);
 var img2 = document.getElementById('img-2');
 img2.insertAdjacentHTML('afterbegin', '<img src="img/profile/dog/'+resultName[1]+'.jpg" alt="'+resultName[1]+'" width="200px">');
 var desc2 = document.getElementById('desc-2');
@@ -121,6 +130,8 @@ smart2.insertAdjacentHTML('afterbegin', getGraphHTML(resultSmart[1]));
 
 var name3 = document.getElementById('name-3');
 name3.insertAdjacentHTML('afterbegin', resultName[2]);
+var ename3 = document.getElementById('ename-3');
+ename3.insertAdjacentHTML('afterbegin', resultEName[2]);
 var img3 = document.getElementById('img-3');
 img3.insertAdjacentHTML('afterbegin', '<img src="img/profile/cat/'+resultName[2]+'.jpg" alt="'+resultName[2]+'" width="200px">');
 var desc3 = document.getElementById('desc-3');
@@ -139,6 +150,8 @@ smart3.insertAdjacentHTML('afterbegin', getGraphHTML(resultSmart[2]));
 
 var name4 = document.getElementById('name-4');
 name4.insertAdjacentHTML('afterbegin', resultName[3]);
+var ename4 = document.getElementById('ename-4');
+ename4.insertAdjacentHTML('afterbegin', resultEName[3]);
 var img4 = document.getElementById('img-4');
 img4.insertAdjacentHTML('afterbegin', '<img src="img/profile/cat/'+resultName[3]+'.jpg" alt="'+resultName[3]+'" width="200px">');
 var desc4 = document.getElementById('desc-4');
