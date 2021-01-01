@@ -16,13 +16,13 @@
     <meta property="og:title" content="테스트 결과 : 집사 궁합 테스트 - 나와 찰떡궁합인 댕냥이는?">
     <meta property="og:description" content="집사 궁합 테스트를 통해 나와 찰떡궁합인 댕댕이와 냥냥이를 찾아보자! 성격검사, 심리검사, 성격, 심리, 강아지, 고양이, 댕댕이, 냥냥이, 반려동물, 궁합, 테스트">
     <meta property="og:image" content="img/cat-main3.jpg">
-    <meta property="og:url" content="https://jibsa-test.netlify.app/resultid=5">
+    <meta property="og:url" content="https://jibsa-test.netlify.app">
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="keywords" content="성격검사, 강아지, 고양이, 댕댕이, 냥냥이, 반려동물, 궁합, 테스트"/>
-    <meta name="description" content="집사 궁합 테스트를 통해 나와 찰떡궁합인 댕댕이와 냥냥이를 찾아보자! 성격검사, 심리검사, 성격, 심리, 강아지, 고양이, 댕댕이, 냥냥이, 반려동물, 궁합, 테스트">
+	<meta name="description" content="집사 궁합 테스트를 통해 나와 찰떡궁합인 댕댕이와 냥냥이를 찾아보자!"/>
 	<meta name="robots" content="all"/>
     <title>테스트 결과 : 나와 찰떡궁합인 댕냥이는?</title>
 
@@ -34,6 +34,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     
     <!-- MDB template -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -84,6 +85,7 @@
                 <div class="result">
                     <h3>테스트 결과</h3>
                     <p id="matched-dog">나와 찰떡궁합인 댕댕이는 : </p>
+                    <p id="matched-cat">나와 찰떡궁합인 냥냥이는 : </p>
                     <h4>상세 설명</h4>
                     <div class="details">
                         <div class="detailwrap">
@@ -144,8 +146,61 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="detailwrap">
+                            <div id="name-3"></div>
+                            <div id="ename-3"></div>
+                            <div id="img-3"></div>
+                            <div id="desc-3"></div>
+                            <div class="properties d-flex">
+                                <div class="axis">
+                                    <ul>
+                                        <li class="axisname">활동성</li>
+                                        <li class="axisname">애교</li>
+                                        <li class="axisname">친화력</li>
+                                        <li class="axisname">충성심</li>
+                                        <li class="axisname">똑똑함</li>
+                                    </ul>
+                                </div>
+                                <div class="graph flex-grow-1">
+                                    <div id="activity-3" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;"></div>
+                                    <div id="attract-3" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;"></div>
+                                    <div id="intimacy-3" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;"></div>
+                                    <div id="loyalty-3" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;"></div>
+                                    <div id="smart-3" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detailwrap">
+                            <div id="name-4"></div>
+                            <div id="ename-4"></div>
+                            <div id="img-4"></div>
+                            <div id="desc-4"></div>
+                            <div class="properties d-flex">
+                                <div class="axis">
+                                    <ul>
+                                        <li class="axisname">활동성</li>
+                                        <li class="axisname">애교</li>
+                                        <li class="axisname">친화력</li>
+                                        <li class="axisname">충성심</li>
+                                        <li class="axisname">똑똑함</li>
+                                    </ul>
+                                </div>
+                                <div class="graph flex-grow-1">
+                                    <div id="activity-4" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;">
+                                    </div>
+                                    <div id="attract-4" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;">
+                                    </div>
+                                    <div id="intimacy-4" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;">
+                                    </div>
+                                    <div id="loyalty-4" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;">
+                                    </div>
+                                    <div id="smart-4" class="progress" style="height:20px;font-size: 0.8rem;margin-bottom: 2.5px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="button-wrap d-flex justify-content-between">
-                            <button type="button" class="endbutton btn btn-primary" onclick="location.href='test-cat'">고양이도 찾아보기</button>
+                            <button type="button" class="endbutton btn btn-primary" onclick="location.href='test-dog'">다시하기</button>
                             <button type="button" class="endbutton btn btn-secondary" onclick="location.href='/'">처음으로</button>
                         </div>
                         <div class="sharebtn">
@@ -161,7 +216,7 @@
                 <script>var rid=5;</script>
                 <script src="js/my/profiles.js"></script>
                 <script src="js/my/functions.js"></script>
-                <script src="js/my/resultShowDog.js"></script>
+                <script src="js/my/resultShow.js"></script>
                 <script type='text/javascript'>
                     Kakao.init('dbaf392ff0dd80d8f8fb8a83199a1f32');
                     Kakao.Link.createDefaultButton({
