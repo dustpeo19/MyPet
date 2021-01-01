@@ -168,9 +168,8 @@ header h2 {
     padding: 10px;
 }
 div[class^="tab"] {
-    width: 350px;
+    width: 320px;
     margin: 40px auto;
-    font-family: 'MapoGoldenPier';
 }
 .number {
     font-size: 20px;
