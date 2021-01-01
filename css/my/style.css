@@ -32,14 +32,14 @@ header h2 {
 }
 
 /* index */
-.happynewyear {
+/* .happynewyear {
     margin: 10px auto;
     width: 500px;
 }
 @media(max-width : 600px) {
     .happynewyear {width: 320px;}
     .happynewyear img {width: 320px;}
-}
+} */
 /* speech-bubble */
 .bubble-container {
     width: 320px;
