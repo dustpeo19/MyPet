@@ -260,7 +260,7 @@ p[id^=matched] {
 }
 div[id^=name] {
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 15px;
     font-family: 'MapoGoldenPier';
@@ -304,7 +304,7 @@ div[id^="desc"] {
 @media(max-width : 900px) {
     .result {width: 320px;}
     p[id^=matched] {font-size: 15px;}
-    div[id^=name] {font-size: 18px;}
+    div[id^=name] {font-size: 20px;}
     div[id^=ename] {font-size: 14px;}
     div[id^="desc"] {font-size: 16px;}
 }
@@ -421,7 +421,7 @@ footer address {
     .noticetable {font-size: 15px;}
     .resultcollection table td{font-size: 13px;}
     .resultcollection {width: 320px;}
-    .resultname {font-size: 18px;}
+    .resultname {font-size: 20px;}
     .resultename {font-size: 14px;}
     .resultdesc {font-size: 16px;}
 }
